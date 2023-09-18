@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript Completo 2008</title>
+
+    <script>
+
+        //literal
+        function somar(n1, n2) {
+            // corpo da funcao
+            return n1 + n2;
+        }
+
+        var soma = (somar(10, 20));
+        console.log('Resultado', soma);
+
+        somar.teste = 'propriedade da funcao';
+        console.log(somar.teste);
+
+        var teste = function abacaxi(f) {
+            f();
+        };
+
+        teste(function () {
+            console.log('funcao passada por parametro');
+        });
+
+        console.log('-----------------');
+
+        var x = 0;
+        var y;
+
+        function mostraX() {
+            var x = 10; //escopo local
+            var y = 20; // sem var, escopo global
+            console.log('mostra x dentro: ', x);
+            console.log('mostra y dentro: ', y);
+        }
+        mostraX()
+
+        console.log('mostra x fora: ', x);
+        console.log('mostra y: fora ', y);
+
+        //IIFE Immediately-invoked function expression - funções auto-executáveis
+        (function () {
+            'use strict';
+            var isValid = false;
+            console.log(isValid);
+
+            function somar() {
+                console.log(arguments); //ela representa todos os valores que foram passados por parametros na execução da função
+                var result = 0;
+                var x = 0;
+
+                while (arguments[x]) {
+                    result += arguments[x]
+                    x++;
+                }
+                console.log("result: ", result);
+            }
+
+            somar(20, 20, 10, 5, 5, 15);
+        })();
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Curso Javascript Completo 2008</h1>
+</body>
+
+</html>

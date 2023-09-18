@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript Completo 2018</title>
+</head>
+
+<body>
+    <h1>Curso Javascript Completo 2018</h1>
+
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="cp">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+
+    <script>
+        (function () {
+            var paragrafos = document.querySelectorAll('.cp');
+
+            // var x = 0;
+            // while (paragrafos[x]) {
+            //     paragrafos[x].textContent = x + ' - Este site foi hackeado por ALYFER';
+            //     x++;
+            // }
+
+            for (var i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].textContent = i + ' - Este site foi hackeado por ALYFER';
+            }
+        })()
+
+    </script>
+</body>
+
+</html>

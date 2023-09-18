@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logica de Programação Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <div id="output"></div>
+</body>
+
+<script>
+
+    var numeros = new Array(25, 30, 45, 28, 0, 12, 78, 64);
+    var output = document.querySelector('#output');
+
+    var soma = 0
+
+    for (var i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            soma += numeros[i];
+        }
+    }
+
+    output.innerHTML = 'A soma dos numeros pares foi ' + soma;
+
+</script>
+
+</html>

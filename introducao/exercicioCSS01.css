@@ -1,0 +1,37 @@
+body {
+    background-color:goldenrod;
+}
+
+h1 {
+    background-color: darkgoldenrod;
+    color: azure;
+    font-family: Impact;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-family: bahnschrift;
+    font-size: 28px;
+    font-variant:normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: azure;
+}
+
+ol {
+    text-align: left;
+    font-size: 22px;
+    font-variant: small-caps;
+    font-family: bahnschrift;
+}
+
+p {
+    text-indent: 28px;
+    text-align: left;
+    font-size: 24px;
+    font-variant: small-caps;
+    font-family: bahnschrift;
+}

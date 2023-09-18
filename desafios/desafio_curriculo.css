@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana;
+    background: #b7b7b7;
+}
+
+h1 {
+    background-color:#6e6ebe5a;
+    color: #360394;
+    width: 80%;
+    margin: auto;
+    font-size: 33px;
+    text-align: center;
+    padding: 6px;
+}
+
+.civil {
+    font-size: 13px;
+    text-align: center;
+}
+
+.seçao {
+    background-color: #ccc;
+    color: darkblue;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 30px;
+    text-align: left;
+    border-bottom: solid 2px darkblue;
+}
+
+.descriçao {
+    font-size: 13px;
+    text-align: left;
+    width: 81%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.links {
+    color: #404040;
+    font-weight: bold;
+    text-align: left;
+    width: 81%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.posLink{
+    color: #404040;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    width: 81%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: solid;
+}
+a:link{
+    color: blue;
+}
+a:visited {
+    color: blue;
+}
+a:hover{
+    color: cyan;
+}
+
+ul {
+    width: 82%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+ul li {
+    font-size: 13px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+

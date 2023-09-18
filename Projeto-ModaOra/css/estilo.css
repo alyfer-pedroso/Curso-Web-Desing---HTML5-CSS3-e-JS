@@ -1,0 +1,151 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Viaoda Libre', cursive; */
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  background-color: #162028;
+}
+
+h1 {
+  color: white;
+  font-family: "Viaoda Libre", cursive;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: black;
+  font-family: "Viaoda Libre", cursive;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+p {
+  color: #555;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  justify-content: space-around;
+}
+
+.hero_nav a {
+  text-decoration: none;
+  color: #425564;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.7rem;
+}
+
+.hero_nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.mid {
+  width: 70%;
+  margin: 10rem auto;
+}
+
+.mid-content {
+  text-align: center;
+}
+
+.mid-content p {
+  font-size: 2rem;
+  line-height: 2.5;
+}
+
+.mid-content_container {
+  display: flex;
+  gap: 4.5rem;
+  padding: 0;
+  margin: 10rem auto;
+  justify-content: center;
+}
+
+.mid-card {
+  flex-grow: 1;
+}
+
+.mid-card h3 {
+  color: #555;
+  text-transform: uppercase;
+  padding: 3rem 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: 3px;
+}
+
+.mid-card p {
+  padding: 0;
+  font-weight: 400;
+}
+
+.mid-card img {
+  width: 100%;
+}
+
+.end {
+  background-color: #003d52;
+}
+
+.end-content {
+  padding: 18rem 0 40rem 12rem;
+  position: relative;
+}
+
+.end-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 7rem;
+  line-height: 1.5;
+  z-index: 3;
+  position: relative;
+}
+
+.end-content p {
+  color: white;
+  font-size: 2rem;
+  width: 55%;
+  line-height: 1.5;
+  margin-top: 1rem;
+  position: absolute;
+  z-index: 2;
+  padding-bottom: 0;
+}
+
+.end-content-img {
+  position: absolute;
+  z-index: 0;
+  right: 21%;
+  bottom: 0;
+}
+
+.end-content-img img {
+  width: 170%;
+  height: auto;
+}
+
+.rodape {
+  background-color: #0b171f;
+  padding: 3rem;
+  text-align: center;
+}
+
+.rodape p {
+  color: #6f8597;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}

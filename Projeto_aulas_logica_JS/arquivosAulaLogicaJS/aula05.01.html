@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logica de Programação Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <button onclick="iniciarCalculo('+')">+</button>
+    <button onclick="iniciarCalculo('-')">-</button>
+    <button onclick="iniciarCalculo('*')">*</button>
+    <button onclick="iniciarCalculo('/')">/</button>
+    <hr>
+    <div id="output"></div>
+
+    <script>
+
+        var value = parseFloat(prompt('digite um numero'));
+
+        escreve(value);
+
+        function escreve(msg) {
+            var output = document.querySelector('#output');
+            output.innerHTML = msg;
+        }
+
+        function iniciarCalculo(simbolo) {
+            var n1 = parseFloat(document.querySelector('#output').textContent);
+            var n2 = parseFloat(prompt('digite outro numero'));
+
+            try {
+                var result = calcular(simbolo, n1, n2);
+            } catch (e) { //se deu erro
+                alert(e);
+                return;
+            }
+
+            escreve(result);
+        }
+
+        function calcular(simbolo, n1, n2) {
+
+            if (simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/') {
+                throw new Error('digite um simbolo valido');
+            }
+
+            //se n1 nao pode ser numero ou n2 nao pode ser numero
+            if (isNaN(n1) || isNaN(n2)) {
+                throw new Error('chama passando somente numeros');
+            }
+
+            var numeroCalculado = null;
+
+            switch (simbolo) {
+                case '+':
+                    numeroCalculado = (n1 + n2);
+                    break;
+                case '-':
+                    numeroCalculado = (n1 - n2);
+                    break;
+                case '*':
+                    numeroCalculado = (n1 * n2);
+                    break;
+                case '/':
+                    numeroCalculado = (n1 / n2);
+            }
+            return numeroCalculado;
+        }
+
+    </script>
+</body>
+
+</html>

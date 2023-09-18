@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Overflow</title>
+
+    <style>
+        body {
+            margin-bottom: 500px;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255,0,0,.5);
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item {
+            width: fit-content;
+        }
+
+        .min-content .item {
+            width: min-content;
+        }
+
+        .max-content .item {
+            width: max-content;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+
+        .overflow-y-hidden {
+            overflow-y: hidden;
+        }
+
+        .overflow-x-scroll {
+            overflow-x: scroll;
+        }
+
+        .overflow-visible {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container fit-content overflow-hidden">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, itaque.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugit est praesentium temporibus officiis mollitia id repudiandae modi fugiat ut dolores, quas dolorum aperiam quisquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quisquam fuga explicabo. Dolores eius totam earum distinctio praesentium deserunt tenetur pariatur odit sed autem incidunt repellat omnis delectus, perspiciatis corrupti cum? Deleniti eos quasi cupiditate dolore tempora consectetur facere excepturi accusantium dolorum optio ipsam architecto beatae mollitia voluptatum provident veritatis dignissimos sapiente, perspiciatis natus qui nisi nulla maiores, quia repellat? Ducimus, quibusdam voluptate earum odio quisquam voluptas, nihil sapiente, quos officiis incidunt autem facere cupiditate!</div>
+    </div>
+
+    <div class="container min-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, itaque.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugit est praesentium temporibus officiis mollitia id repudiandae modi fugiat ut dolores, quas dolorum aperiam quisquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quisquam fuga explicabo. Dolores eius totam earum distinctio praesentium deserunt tenetur pariatur odit sed autem incidunt repellat omnis delectus, perspiciatis corrupti cum? Deleniti eos quasi cupiditate dolore tempora consectetur facere excepturi accusantium dolorum optio ipsam architecto beatae mollitia voluptatum provident veritatis dignissimos sapiente, perspiciatis natus qui nisi nulla maiores, quia repellat? Ducimus, quibusdam voluptate earum odio quisquam voluptas, nihil sapiente, quos officiis incidunt autem facere cupiditate!</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, itaque.</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugit est praesentium temporibus officiis mollitia id repudiandae modi fugiat ut dolores, quas dolorum aperiam quisquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quisquam fuga explicabo. Dolores eius totam earum distinctio praesentium deserunt tenetur pariatur odit sed autem incidunt repellat omnis delectus, perspiciatis corrupti cum? Deleniti eos quasi cupiditate dolore tempora consectetur facere excepturi accusantium dolorum optio ipsam architecto beatae mollitia voluptatum provident veritatis dignissimos sapiente, perspiciatis natus qui nisi nulla maiores, quia repellat? Ducimus, quibusdam voluptate earum odio quisquam voluptas, nihil sapiente, quos officiis incidunt autem facere cupiditate!</div>
+    </div>
+</body>
+
+</html>

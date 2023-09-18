@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logica de Programação Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <button onclick="showDayWeek()">Clique Aqui</button>
+</body>
+
+<script>
+    // mostrar para o usuario qual dia ele ta vendo a pagina
+
+    var dias = new Array('domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado');
+
+    //vai receber um novo obj do tipo Date
+    var hoje = new Date();
+    var diaSemana = hoje.getDay(); // retorna o dia da semana;
+
+    /*
+    0 - domingo;
+    1 - segunda;
+    ...
+    6 - sabado;
+    */
+
+    function showDayWeek() {
+        alert('Bem-Vindo(a), hoje é ' + dias[diaSemana]);
+    }
+
+
+
+</script>
+
+</html>

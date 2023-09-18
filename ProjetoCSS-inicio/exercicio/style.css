@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Bahnschrift;
+    background-color: #EAEAEA;
+}
+
+.hero {
+    color: white;
+    background-image: url(../imagens/bg-8.jpg);
+    height: 430px;
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;
+}
+
+.hero-content {
+    width: 80%;
+    margin: 100px auto 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 5px black;
+    margin-bottom: 0;
+}
+
+.hero-content p {
+    background-color: rgba(0,0,0,0.7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px;
+    border-bottom: 2px solid;
+    /* margin-bottom: 50px; */
+}
+
+.hero nav ul {
+    margin: 20px 50px 0 0 ;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.hero nav a {
+    text-decoration: none;
+    background-color: rgba(51, 51, 51,.8);
+    color: azure;
+    border: 1px solid white;
+    padding: 20px;
+    display: block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hero nav a:hover {
+    background-color: rgba(255, 255, 255,.8);
+    color: #333333;
+    border: 1px solid #333333;
+}
+
+/* section {
+    padding-top: 0px;
+    width: 80%;
+    margin: auto;
+} */
+
+.sub {
+    padding-top: 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.sub article {
+    background-color: #EAEAEA;
+    padding: 16px;
+}
+
+.sub article h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sub article p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sub1 {
+    background-color: #333333;
+    padding: 20px;
+}
+
+.teste {
+    display: flex;
+}
+
+.card {
+    background-color: #EAEAEA;
+    border-radius: 2%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.logo {
+    width: 25%;
+    padding: 15px 15px 0;
+    display: block;
+    margin: auto;
+}
+
+.java {
+    width: 16%;
+    padding: 15px 15px 0;
+    display: block;
+    margin: auto;
+}
+
+.card-content {
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 15px;
+}
+
+.division {
+    display: flex;
+    margin: 20px;
+}
+
+.bloco article{
+    padding: 20px;
+    margin: 20px;
+    border: 2px ridge #333333;
+    border-radius: 10px;
+}
+
+.bloco h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.bloco p {
+    font-size: 18px;
+    text-align: justify;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.rodape {
+    color: white;
+    background-color: #6b6c68;
+    text-align: right;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logica de Programação Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <div id="output"></div>
+
+    <script>
+        var output = document.querySelector('#output');
+
+        var mensagem = '';
+        for (var i = 0; i < 1001; i++) {
+            mensagem += 'i: ' + i + '<br>';
+        }
+
+        output.innerHTML = mensagem;
+        console.log(output)
+
+    </script>
+</body>
+
+</html>

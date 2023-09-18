@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Curso Javascript Completo 2018</title>
+        <style type="text/css">
+            body {
+                padding-top: 150px;
+            }
+            .menu {
+                height: 150px;
+                background: red;
+                width: 100%;
+                transition: all 1s;
+                position: fixed;
+                top: 0;
+                left: 0;
+                opacity: 0.6;
+            }
+            .fx .menu {
+                height: 50px;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu" id="menu"></div>
+
+        <h1>Javascript Completo</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa. Repellendus suscipit aliquam amet deserunt similique minus quia, ipsum sit nulla sapiente corrupti hic alias, atque commodi libero, sed sint!</p>
+
+        <script>
+            (() => {
+                var $body = document.querySelector("body");
+                var $menu = document.getElementById("menu").offsetHeight;
+
+                attMenu = () => {
+                    var posYscroll = window.pageYOffset;
+                    posYscroll > $menu ? $body.classList.add("fx") : $body.classList.remove("fx");
+                };
+
+                window.addEventListener("scroll", attMenu);
+            })();
+        </script>
+    </body>
+</html>

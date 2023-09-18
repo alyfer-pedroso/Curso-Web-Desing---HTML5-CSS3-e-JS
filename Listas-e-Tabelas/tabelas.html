@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Tables</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      table {
+        width: 40%;
+        margin: auto;
+        background-color: beige;
+        border-collapse: collapse;
+        border: 4px solid black;
+      }
+
+      caption {
+        padding-bottom: 20px;
+      }
+
+      th {
+        background-color: rgb(190, 190, 155);
+        border: 2px solid black;
+        padding: 16px;
+      }
+
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+
+      tfoot td {
+        color: red;
+        font-weight: bold;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--titulo-->
+    <table>
+      <caption>
+        Tabela de preços de cursos
+      </caption>
+
+      <!--cabeçario-->
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>Curso</th>
+          <th>Investimento</th>
+        </tr>
+      </thead>
+
+      <!--conteudo-->
+      <tbody>
+        <!--linhas-->
+        <tr>
+          <td rowspan="3">Desing</td>
+          <td>InDesing</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <!---->
+          <td>Photoshop</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <!---->
+          <td>Illustrator</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Development</td>
+          <td>HTML</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <!---->
+          <td>CSS</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <!---->
+          <td>Javascript</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+
+        <tr>
+          <!---->
+          <td>PHP</td>
+          <td>R$ 1.000,00</td>
+        </tr>
+      </tbody>
+
+      <!--legenda -->
+      <tfoot>
+        <tr>
+          <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logica de Programação Javascript</title>
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+        //criar função
+        function mostrarTabuada() {
+            alert('mostrarTabuada chamada');
+        }
+
+        //selecionar conteudo do html
+        var output = document.querySelector('#output');
+
+        var mensagem = '';
+
+        output.innerHTML = mensagem;
+        console.log(output)
+
+    </script>
+</body>
+
+</html>
